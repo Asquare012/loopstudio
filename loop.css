@@ -1,0 +1,568 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+/* header */
+
+header {
+    height: 100%;
+    width: 100%;
+    background: url(image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding-top: 4em;
+    width: 100%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul li a:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ffffff;
+}
+
+ul li:not(:first-child) {
+    color: #ffffff;
+    margin: 0 3em 0 0;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+ul li:first-child {
+    margin: 0 50vw 0 11%;
+    width: 1vw;
+}
+
+ul li:last-child {
+    display: none;
+}
+
+header #box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff;
+    height: 35vh;
+    width: 50%;
+    margin: 2em 0 0 11%;
+    font-size: 5vw;
+    letter-spacing: 3px;
+    padding-left: 30px;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+/* second */
+
+#second {
+    height: 90%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second #left {
+    flex: 80%;
+    height: 90%;
+    padding: 70px 0 0 15%;
+}
+
+#second #right {
+    flex: 40%;
+    background-color: #ffffff;
+    height: 60%;
+}
+
+#second #right #content h2 {
+    font-size: 3vw;
+    padding: 40px 0 25px 0;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: normal;
+}
+
+#second #right #content {
+    background-color: #ffffff;
+    height: 90%;
+    width: 100%;
+    position: relative;
+    left: -250;
+    top: 50;
+    text-align: left;
+    padding: 0 0 0 60px;
+    line-height: 30px;
+}
+
+
+/* third */
+
+#third {
+    height: 100%;
+    width: 80%;
+    margin: 4% 10% 15% 10%;
+}
+
+#third #top-title {
+    height: 50px;
+    display: flex;
+    background-color: #ffffff;
+}
+
+#third #top-title .left {
+    padding-right: 45vw;
+    margin-left: 40px;
+    font-size: 1.6vw;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#third #top-title .right button {
+    outline: none;
+    border: 2px solid #252424;
+    padding: 8px 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#third #top-title .right button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#third #gallery {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#third #gallery div {
+    height: 45vh;
+    width: 13vw;
+    cursor: pointer;
+    transition: filter 0.2s ease-in-out;
+    color: hsl(0, 5%, 82%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 150%;
+    padding: 0 10px 10px 10px;
+}
+
+#third #gallery div:hover {
+    filter: brightness(60%);
+}
+
+#third #gallery div:first-child {
+    background: url(image-deep-earth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#third #gallery div:nth-child(2) {
+    background: url(image-night-arcade.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#third #gallery div:nth-child(3) {
+    background: url(image-soccer-team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#third #gallery div:nth-child(4) {
+    background: url(image-grid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#third #gallery div:nth-child(5) {
+    background: url(image-from-above.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#third #gallery div:nth-child(6) {
+    background: url(image-pocket-borealis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#third #gallery div:nth-child(7) {
+    background: url(image-curiosity.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#third #gallery div:last-child {
+    background: url(image-fisheye.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* more */
+
+#third .more {
+    display: none;
+    justify-content: center;
+}
+
+
+/* footer */
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+
+/* footer left */
+
+footer .left {
+    height: 100%;
+    flex: 60%;
+}
+
+footer .left ol {
+    list-style: none;
+}
+
+footer .left ol li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .left ol li:not(:first-child) {
+    margin-left: 3vw;
+    display: inline-flex;
+}
+
+footer .left ol li:not(:first-child):hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ffffff;
+}
+
+footer .left ol li:first-child {
+    margin: 0 7vw 2vw 10vw;
+}
+
+footer .left ol li:nth-child(2) {
+    margin-left: 10vw;
+}
+
+
+/* footer right */
+
+footer .right {
+    height: 100%;
+    flex: 40%;
+    color: #a59e9e;
+}
+
+footer .right .icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    color: #ffffff;
+}
+
+footer .right .icons img {
+    padding: 0 0.7vw;
+}
+
+footer .right h4 {
+    margin: 22px 0 0 14vw;
+    font-size: 90%;
+}
+
+
+/* side menu */
+
+#side-menu {
+    display: none;
+}
+
+
+/* media queries(tablet)*/
+
+@media screen and (min-width: 760px) and (max-width: 1000px) {
+    /* second */
+    #second #right #content {
+        width: 120%;
+        font-size: 1.7vw;
+    }
+    /* third */
+    #third #top-title .left {
+        padding-right: 40vw;
+        margin-left: 30px;
+    }
+    #third #gallery div {
+        height: 40vh;
+        width: 13vw;
+        font-size: 100%;
+        padding: 0 10px 10px 10px;
+    }
+}
+
+
+/* media queries(mobile)*/
+
+@media screen and (max-width: 760px) {
+    /* first */
+    header {
+        height: 100%;
+        width: 100%;
+        background: url(image-hero2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    ul li:not(:first-child) {
+        display: none;
+    }
+    ul li:last-child {
+        display: block;
+        cursor: pointer;
+        margin-left: 22vw;
+        margin-right: 20px;
+        padding: 10px;
+    }
+    header #box {
+        width: 85%;
+        height: 35vh;
+        margin: 0;
+        font-size: 8vw;
+        padding: 10px 50px 10px 40px;
+    }
+    header .parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+    }
+    /* second */
+    #second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #second #left {
+        flex: 100%;
+        height: 100%;
+        padding: 0;
+        margin-top: 800px;
+    }
+    #second #left img {
+        height: 100%;
+        width: 100%;
+        padding: 40px 20px;
+    }
+    #second #right {
+        flex: 100%;
+        height: 100%;
+        margin-bottom: 500px;
+    }
+    #second #right #content {
+        line-height: 30px;
+        position: static;
+        text-align: center;
+        padding: 0 70px;
+    }
+    #second #right #content h2 {
+        font-size: 8vw;
+        padding: 40px 0 25px 0;
+        font-family: "Josefin Sans", sans-serif;
+        line-height: normal;
+    }
+    /* third */
+    #third {
+        margin: 300px 0 0 0;
+        width: 100%;
+    }
+    #third #top-title .left {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 4vw;
+    }
+    #third #top-title .right {
+        display: none;
+    }
+    #third #gallery {
+        grid-template-columns: 1fr;
+    }
+    #third #gallery div {
+        height: 26vh;
+        width: 90%;
+        margin: 15px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-size: 200%;
+        padding: 0 200px 10px 10px;
+    }
+    #third #gallery div:first-child {
+        background: url(image-deep-earth2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #third #gallery div:nth-child(2) {
+        background: url(image-night-arcade2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #third #gallery div:nth-child(3) {
+        background: url(image-soccer-team2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #third #gallery div:nth-child(4) {
+        background: url(image-grid2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #third #gallery div:nth-child(5) {
+        background: url(image-from-above2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #third #gallery div:nth-child(6) {
+        background: url(image-pocket-borealis2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #third #gallery div:nth-child(7) {
+        background: url(image-curiosity2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #third #gallery div:last-child {
+        background: url(image-fisheye2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #third .more {
+        display: flex;
+        justify-content: center;
+    }
+    #third .more button {
+        outline: none;
+        border: 2px solid #252424;
+        padding: 15px 50px;
+        margin-top: 40px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+    }
+    #third .more button:hover {
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        outline: none;
+    }
+    /* footer */
+    footer {
+        height: 450px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1300px;
+        padding-top: 60px;
+    }
+    footer .left ol li:not(:first-child) {
+        margin: 22px 0;
+        display: block;
+        text-align: center;
+    }
+    footer .right .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    footer .right .icons img {
+        margin: 20px 1.5vw 0 1.5vw;
+        cursor: pointer;
+    }
+    footer .right h4 {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 0 0;
+        font-size: 100%;
+    }
+    /* MENU */
+    #side-menu {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -500;
+        z-index: 2;
+        transition: left 0.5s ease-in-out;
+    }
+    #side-menu ul {
+        flex-direction: column;
+    }
+    #side-menu ul li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 5vw;
+    }
+    #side-menu ul li:first-child {
+        display: flex;
+        width: 100vw;
+        margin: -10px 0 150px 30px;
+    }
+    #side-menu ul li:not(:first-child) {
+        margin: 0 0 25px 30px;
+    }
+    #side-menu ul #close {
+        font-size: 7vw;
+        color: #ffffff;
+        margin-left: 30vw;
+        cursor: pointer;
+    }
+    #side-menu ul #close:active {
+        color: red;
+    }
+}
