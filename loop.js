@@ -1,7 +1,7 @@
 // side menu(open)
 let butt = document.querySelector("#buttin");
 let menu = document.querySelector("#side-menu");
-menu.style.left = -500;
+menu.style.left = -800;
 
 butt.addEventListener("click", () => {
     menu.style.left = 0;
@@ -12,6 +12,6 @@ butt.addEventListener("click", () => {
 let close = document.querySelector("#close");
 
 close.addEventListener("click", () => {
-    menu.style.left = -500;
+    menu.style.left = -800;
     document.body.style.overflowY = "visible";
 });
