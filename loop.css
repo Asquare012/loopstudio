@@ -26,7 +26,7 @@ header {
     background-attachment: fixed;
 }
 
-ul {
+header ul {
     list-style: none;
     display: flex;
     padding-top: 4em;
@@ -38,16 +38,15 @@ ul li a {
     color: #ffffff;
 }
 
-ul li a:hover {
-    padding-bottom: 5px;
-    border-bottom: 3px solid #ffffff;
-}
-
 ul li:not(:first-child) {
     color: #ffffff;
     margin: 0 3em 0 0;
     font-size: 1.2vw;
     font-weight: 400;
+}
+
+ul li:not(:first-child):hover {
+    border-bottom: 3px solid #ffffff;
 }
 
 ul li:first-child {
@@ -339,7 +338,7 @@ footer .right h4 {
 
 /* media queries(mobile)*/
 
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 300px) and (max-width: 760px) {
     /* first */
     header {
         height: 100%;
@@ -358,6 +357,7 @@ footer .right h4 {
         margin-left: 22vw;
         margin-right: 20px;
         padding: 10px;
+        border-bottom: none !important;
     }
     header #box {
         width: 85%;
@@ -380,10 +380,10 @@ footer .right h4 {
         flex-direction: column;
     }
     #second #left {
-        flex: 100%;
+        flex: 80px;
         height: 100%;
         padding: 0;
-        margin-top: 800px;
+        margin-top: 4600px;
     }
     #second #left img {
         height: 100%;
@@ -393,7 +393,7 @@ footer .right h4 {
     #second #right {
         flex: 100%;
         height: 100%;
-        margin-bottom: 500px;
+        margin-bottom: 4200px;
     }
     #second #right #content {
         line-height: 30px;
@@ -409,7 +409,7 @@ footer .right h4 {
     }
     /* third */
     #third {
-        margin: 300px 0 0 0;
+        margin: 400px 0 0 0;
         width: 100%;
     }
     #third #top-title .left {
@@ -428,11 +428,12 @@ footer .right h4 {
     #third #gallery div {
         height: 26vh;
         width: 90%;
+        min-width: 50%;
         margin: 15px 0;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
-        font-size: 200%;
+        font-size: 180%;
         padding: 0 200px 10px 10px;
     }
     #third #gallery div:first-child {
@@ -509,6 +510,11 @@ footer .right h4 {
         margin: 22px 0;
         display: block;
         text-align: center;
+        text-decoration: none;
+    }
+    footer .left ol li:not(:first-child):hover {
+        padding-bottom: 0;
+        border-bottom: none;
     }
     footer .right .icons {
         display: flex;
@@ -530,12 +536,12 @@ footer .right h4 {
     #side-menu {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 120%;
         background-color: #000000;
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -500;
+        left: -800;
         z-index: 2;
         transition: left 0.5s ease-in-out;
     }
@@ -551,7 +557,7 @@ footer .right h4 {
     #side-menu ul li:first-child {
         display: flex;
         width: 100vw;
-        margin: -10px 0 150px 30px;
+        margin: 70px 0 150px 30px;
     }
     #side-menu ul li:not(:first-child) {
         margin: 0 0 25px 30px;
